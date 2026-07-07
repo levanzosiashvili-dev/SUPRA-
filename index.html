@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUPRA — Georgian Table</title>
+<meta name="description" content="SUPRA — a Georgian restaurant serving khachapuri, khinkali, and wine from the Caucasus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="wordmark">SUPRA</a>
+      <nav class="main-nav" id="main-nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-lines" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Tbilisi · Since 2014</p>
+      <h1 class="hero-title">SUPRA</h1>
+      <p class="hero-sub">A Georgian table. Bread from the tone, wine from the qvevri, and a toast for every guest.</p>
+      <a href="#menu" class="btn btn-primary">See the menu</a>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to next section">↓</a>
+  </section>
+
+  <!-- ============ ABOUT / TOAST ============ -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <p class="section-label">The idea</p>
+        <h2>Not a menu. A table.</h2>
+        <p>In Georgia, a meal is never just food — it's a supra: a long table, a toastmaster, and course after course arriving until midnight. We built this place to hold that tradition in the middle of the city. Everything is made the way it's made at home — the dough pulled by hand, the wine poured from clay, the toasts unhurried.</p>
+      </div>
+      <blockquote class="toast">
+        <p>"Let this toast be to the table itself — to those who filled it before us, and to those still on their way."</p>
+        <cite>— a Georgian toast, as old as the vine</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <p class="section-label light">The menu</p>
+      <h2 class="menu-title">The courses, in order</h2>
+
+      <div class="menu-tabs" id="menu-tabs">
+        <button class="tab-btn active" data-course="zakuska">Zakuska</button>
+        <button class="tab-btn" data-course="tone">From the Tone</button>
+        <button class="tab-btn" data-course="grill">Grill</button>
+        <button class="tab-btn" data-course="sweet">Sweet</button>
+        <button class="tab-btn" data-course="wine">Wine</button>
+      </div>
+
+      <div class="menu-panels">
+
+        <ul class="menu-list active" data-panel="zakuska">
+          <li><div class="item-name">Pkhali <span class="tag">v</span></div><div class="item-desc">Walnut-spiced spinach, beet, and leek pâtés</div><div class="item-price">14</div></li>
+          <li><div class="item-name">Badrijani Nigvzit <span class="tag">v</span></div><div class="item-desc">Fried eggplant rolled around walnut paste</div><div class="item-price">13</div></li>
+          <li><div class="item-name">Khinkali — Beef & Pork</div><div class="item-desc">Hand-folded dumplings, broth sealed inside</div><div class="item-price">3 / piece</div></li>
+          <li><div class="item-name">Khinkali — Mushroom <span class="tag">v</span></div><div class="item-desc">Wild mushroom, sulguni, black pepper</div><div class="item-price">3 / piece</div></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="tone">
+          <li><div class="item-name">Khachapuri Adjaruli</div><div class="item-desc">Boat-shaped bread, egg and butter melted at the table</div><div class="item-price">18</div></li>
+          <li><div class="item-name">Khachapuri Imeruli</div><div class="item-desc">Round bread, sulguni cheese baked through</div><div class="item-price">15</div></li>
+          <li><div class="item-name">Lobiani</div><div class="item-desc">Bread stuffed with spiced red bean paste</div><div class="item-price">12</div></li>
+          <li><div class="item-name">Shoti</div><div class="item-desc">Plain tone-baked bread, still warm</div><div class="item-price">5</div></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="grill">
+          <li><div class="item-name">Mtsvadi — Pork</div><div class="item-desc">Vine-wood grilled skewers, pomegranate</div><div class="item-price">22</div></li>
+          <li><div class="item-name">Mtsvadi — Lamb</div><div class="item-desc">Grilled over embers, sumac onions</div><div class="item-price">26</div></li>
+          <li><div class="item-name">Chakhokhbili</div><div class="item-desc">Chicken stewed slow with tomato and herbs</div><div class="item-price">19</div></li>
+          <li><div class="item-name">Lobio</div><div class="item-desc">Clay-pot kidney beans, cornbread on the side</div><div class="item-price">14</div></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="sweet">
+          <li><div class="item-name">Churchkhela</div><div class="item-desc">Walnuts strung and dipped in grape must</div><div class="item-price">8</div></li>
+          <li><div class="item-name">Napoleoni</div><div class="item-desc">Georgian-style layered honey cake</div><div class="item-price">9</div></li>
+          <li><div class="item-name">Tklapi</div><div class="item-desc">Rolled fruit leather, plum and cherry</div><div class="item-price">6</div></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="wine">
+          <li><div class="item-name">Saperavi</div><div class="item-desc">Qvevri-aged red, Kakheti</div><div class="item-price">9 / glass</div></li>
+          <li><div class="item-name">Rkatsiteli</div><div class="item-desc">Amber qvevri white, Kakheti</div><div class="item-price">9 / glass</div></li>
+          <li><div class="item-name">Chacha</div><div class="item-desc">Grape pomace spirit, house-distilled</div><div class="item-price">7 / shot</div></li>
+        </ul>
+
+      </div>
+      <p class="menu-note"><span class="tag">v</span> vegetarian · dishes made to share</p>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <p class="section-label">Inside SUPRA</p>
+      <h2>A table set for the evening</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g1"><span>Photo: the long table, set for a supra</span></div>
+      <div class="gallery-item g2"><span>Photo: khachapuri, straight from the tone</span></div>
+      <div class="gallery-item g3"><span>Photo: qvevri wine being poured</span></div>
+      <div class="gallery-item g4"><span>Photo: khinkali being hand-folded</span></div>
+      <div class="gallery-item g5"><span>Photo: mtsvadi over vine-wood coals</span></div>
+    </div>
+    <p class="gallery-hint wrap">Replace each block above with your own photos — instructions are in the code comments.</p>
+  </section>
+
+  <!-- ============ VISIT / CONTACT ============ -->
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div class="visit-info">
+        <p class="section-label light">Visit</p>
+        <h2>Come to the table</h2>
+
+        <div class="visit-block">
+          <h3>Address</h3>
+          <p>7 Erekle II Street<br>Old Tbilisi, Georgia</p>
+        </div>
+        <div class="visit-block">
+          <h3>Hours</h3>
+          <p class="hours">
+            Mon–Thu <span>13:00–23:00</span><br>
+            Fri–Sat <span>13:00–00:30</span><br>
+            Sun <span>13:00–22:00</span>
+          </p>
+        </div>
+        <div class="visit-block">
+          <h3>Reach us</h3>
+          <p>+995 555 12 34 56<br>hello@supra-tbilisi.ge</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <h3>Book a table</h3>
+          <div class="form-row">
+            <input type="text" placeholder="Name" required>
+            <input type="tel" placeholder="Phone" required>
+          </div>
+          <div class="form-row">
+            <input type="date" required>
+            <input type="number" placeholder="Guests" min="1" max="20" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Request a table</button>
+          <p class="form-response" id="form-response" role="status"></p>
+        </form>
+      </div>
+
+      <div class="visit-map">
+        <iframe
+          src="https://www.google.com/maps?q=Erekle%20II%20Street%20Tbilisi%20Georgia&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Map to SUPRA restaurant">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span class="wordmark small">SUPRA</span>
+      <p>© 2026 Supra. A Georgian table in Tbilisi.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
